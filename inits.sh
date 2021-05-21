@@ -1,1 +1,2 @@
-eval $(op signin my)
+#! /bin/bash
+brew install ccat
