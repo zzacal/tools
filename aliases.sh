@@ -1,5 +1,5 @@
-ibrew='arch -x86_64 /usr/local/bin/brew'
-mbrew='arch -arm64e /opt/homebrew/bin/brew'
+alias ibrew='arch -x86_64 /usr/local/bin/brew'
+alias mbrew='arch -arm64e /opt/homebrew/bin/brew'
 
 alias cat="ccat"
 
