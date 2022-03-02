@@ -5,7 +5,7 @@
 #  Concatenating vars is done for iteration convenience only
 #  Recommend only specified names for resources
 ##
-NAMESPACE=space-race
+NAMESPACE=lovely
 RESOURCE_GROUP=$NAMESPACE-group
 COSMOS_ACCOUNT_NAME=$NAMESPACE-cosmos
 DB_NAME=$NAMESPACE-mongod
@@ -62,5 +62,4 @@ fi
                                         --database-name $DB_NAME \
                                         --name $COLLECTION_NAME \
                                         --resource-group $RESOURCE_GROUP \
-                                        --throughput $THROUGHPUT \
                                         --shard $SHARD_KEY_PATH \
