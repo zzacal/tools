@@ -1,6 +1,6 @@
 #! /bin/bash
 
-TOP_NAME=lovely
+TOP_NAME=yes
 RESOURCE_GROUP=$TOP_NAME-group
 SURVICEBUS_NAME=$TOP_NAME-bus
 TOPIC_NAME=$TOP_NAME-topic
@@ -26,11 +26,11 @@ az servicebus topic subscription create \
   --resource-group $RESOURCE_GROUP \
   --namespace-name $SURVICEBUS_NAME \
   --topic-name $TOPIC_NAME \
-  --name $SUBSCRIPTION_NAME | Out-Null \
+  --name $SUBSCRIPTION_NAME \
 
 az servicebus topic authorization-rule create \
   --name $ACCESS_POLICY_NAME \
-  --namespace-name $namespaceName \
+  --namespace-name $SURVICEBUS_NAME \
   --resource-group $RESOURCE_GROUP \
-  --topic-name $topicName \
-  --rights $rights \
+  --topic-name $TOPIC_NAME \
+  --rights Manage Send Listen \

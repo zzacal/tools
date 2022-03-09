@@ -5,7 +5,7 @@
 #  Concatenating vars is done for iteration convenience only
 #  Recommend only specified names for resources
 ##
-NAMESPACE=lovely
+NAMESPACE=yes
 RESOURCE_GROUP=$NAMESPACE-group
 COSMOS_ACCOUNT_NAME=$NAMESPACE-cosmos
 DB_NAME=$NAMESPACE-mongod

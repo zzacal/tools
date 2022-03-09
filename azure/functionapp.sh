@@ -1,7 +1,7 @@
 #! /bin/bash
-TOP_NAME=hamberger
+TOP_NAME=yes
 RESOURCE_GROUP=$TOP_NAME-group
-STORAGE_ACCOUNT_NAME=${TOP_NAME}store
+STORAGE_ACCOUNT_NAME=${TOP_NAME}tempstore
 PLAN_NAME=$TOP_NAME-plan
 FUNC_NAME=$TOP_NAME-func
 
@@ -14,7 +14,7 @@ echo $FUNC_NAME
 echo $LOCATION
 
 az group create --location $LOCATION \
-                  --name $RESOURCE_GROUP \
+                  --name $RESOURCE_GROUP
 
 az storage account create \
     --resource-group $RESOURCE_GROUP \
