@@ -3,6 +3,8 @@ alias mbrew='arch -arm64e /opt/homebrew/bin/brew'
 
 command -v ccat >/dev/null 2>&1 && alias cat='ccat'
 
+alias higround='~/repos/tools/higround_remap.sh'
+
 newbs() {
     touch $1 && \
     chmod 775 $1 && \
